@@ -45,8 +45,10 @@ public class CustomerMailApplication {
     
     public static void main(String[] args) {
         Customer cust = getCustomerTypeFromUser();
-        String mail = generateMail(cust);
-        if(mail != null) System.out.println(mail);
+        if(cust != null) {
+            String mail = generateMail(cust);
+            System.out.println(mail);
+        }
         else System.out.println("Error");
     }
 }

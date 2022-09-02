@@ -23,6 +23,8 @@ public class CustomerFactory {
             case "Delinquent":
                 customer = new DelinquentCustomer();
                 break;
+            default:
+                break;
         }
         return customer;
     }
